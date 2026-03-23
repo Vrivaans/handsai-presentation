@@ -895,10 +895,10 @@
   <nav id="nav">
     <div class="nav-logo">hands<span style="color:var(--text)">ai</span></div>
     <ul class="nav-links">
-      <li><a href="#how"><span class="lang-en">How it works</span><span class="lang-es">Cómo funciona</span></a></li>
+      <li><a href="#philosophy"><span class="lang-en">Philosophy</span><span class="lang-es">Filosofía</span></a></li>
       <li><a href="#features"><span class="lang-en">Features</span><span class="lang-es">Características</span></a></li>
       <li><a href="#security"><span class="lang-en">Security</span><span class="lang-es">Seguridad</span></a></li>
-      <li><a href="#philosophy"><span class="lang-en">Philosophy</span><span class="lang-es">Filosofía</span></a></li>
+      <li><a href="#how"><span class="lang-en">How it works</span><span class="lang-es">Cómo funciona</span></a></li>
       <li><button id="lang-toggle" onclick="toggleLanguage()"
           style="background:none;border:none;color:var(--accent);font-family:'DM Mono',monospace;cursor:pointer;font-size:0.85rem;letter-spacing:0.05em;padding-top:2px;outline:none;">ES</button>
       </li>
@@ -981,116 +981,74 @@
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta">
-    <h2><span class="lang-en">Your agent is only as powerful<br>as the <em>hands</em> you give it.</span><span
-        class="lang-es">Tu agente es tan poderoso<br>como las <em>manos</em> que le das.</span></h2>
-    <p><span class="lang-en">Register your first API in minutes. No plugins, no code, no surprises.</span><span
-        class="lang-es">Registra tu primera API en minutos. Sin plugins, sin código, sin sorpresas.</span></p>
-    <div class="cta-actions">
-      <a href="#contact" class="btn-primary"><span class="lang-en">Request access →</span><span
-          class="lang-es">Solicitar acceso →</span></a>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="flow" id="how">
-    <p class="section-label"><span class="lang-en">Architecture</span><span class="lang-es">Arquitectura</span></p>
-    <h2 class="section-title"><span class="lang-en">One bridge.<br>Every API.</span><span class="lang-es">Un
-        puente.<br>Todas las APIs.</span></h2>
-    <p class="section-desc">
-      <span class="lang-en">HandsAI sits between your LLM and the world. The human registers APIs. The agent uses them.
-        Nobody touches what they shouldn't.</span><span class="lang-es">HandsAI se sitúa entre tu LLM y el mundo. El
-        humano registra las APIs. El agente las usa. Nadie maneja credenciales que no deba tener.</span>
-    </p>
-
-    <div class="flow-diagram">
-      <div class="flow-node llm">
-        <div class="icon">🤖</div>
-        <div class="label"><span class="lang-en">Client</span><span class="lang-es">Cliente</span></div>
-        <div class="name"><span class="lang-en">LLM / Agent</span><span class="lang-es">LLM / Agente</span></div>
-      </div>
-      <div class="flow-arrow">
-        <div class="line"></div>
-        <div class="protocol">MCP stdio</div>
-      </div>
-      <div class="flow-node bridge">
-        <div class="icon">⚡</div>
-        <div class="label"><span class="lang-en">Go Binary</span><span class="lang-es">Binario Go</span></div>
-        <div class="name"><span class="lang-en">HandsAI Bridge</span><span class="lang-es">Puente HandsAI</span></div>
-      </div>
-      <div class="flow-arrow">
-        <div class="line"></div>
-        <div class="protocol">HTTP + PAT</div>
-      </div>
-      <div class="flow-node handsai">
-        <div class="icon">🖐️</div>
-        <div class="label">Java 21</div>
-        <div class="name"><span class="lang-en">HandsAI Server</span><span class="lang-es">Servidor HandsAI</span></div>
-      </div>
-      <div class="flow-arrow">
-        <div class="line"></div>
-        <div class="protocol">REST + Auth</div>
-      </div>
-      <div class="flow-node api">
-        <div class="icon">🌐</div>
-        <div class="label"><span class="lang-en">External</span><span class="lang-es">Externo</span></div>
-        <div class="name"><span class="lang-en">Any API</span><span class="lang-es">Cualquier API</span></div>
-      </div>
-    </div>
-
-    <div class="insight">
-      <span class="bullet">→</span>
-      <p>
-        <span class="lang-en">The LLM sees <strong>tool names and parameters</strong>. It never sees the endpoint URL,
-          the authentication headers, or the API keys. HandsAI resolves all of that internally — the agent can only
-          operate within the boundaries the human explicitly defined.</span><span class="lang-es">El LLM solo ve
-          <strong>nombres de herramientas y parámetros</strong>. Nunca ve la URL del endpoint, las cabeceras de
-          autenticación o las claves API. HandsAI resuelve todo eso internamente — el agente solo puede operar dentro de
-          los límites que el humano definió explícitamente.</span>
-      </p>
-    </div>
-  </section>
-
-    <!-- FEATURES -->
+  <!-- FEATURES -->
   <section class="features" id="features">
     <div class="features-inner">
       <p class="section-label"><span class="lang-en">The Value</span><span class="lang-es">El Valor</span></p>
-      <h2 class="section-title"><span class="lang-en">Everything needed for AI agents to<br>operate real systems securely.</span><span class="lang-es">Todo lo necesario para que agentes de IA<br>operen sistemas reales de forma segura.</span></h2>
+      <h2 class="section-title"><span class="lang-en">Everything needed for AI agents to<br>operate real systems
+          securely.</span><span class="lang-es">Todo lo necesario para que agentes de IA<br>operen sistemas reales de
+          forma segura.</span></h2>
       <p class="section-desc">
-        <span class="lang-en">No more massive codebases just to give an LLM access to your database. HandsAI gives your agent the power to act, instantly and safely.</span><span class="lang-es">Dejá de escribir miles de líneas de código solo para darle a tu LLM acceso a una base de datos. HandsAI le da a tu agente el poder de actuar.</span>
+        <span class="lang-en">No more massive codebases just to give an LLM access to your database. HandsAI gives your
+          agent the power to act, instantly and safely.</span><span class="lang-es">Dejá de escribir miles de líneas de
+          código solo para darle a tu LLM acceso a una base de datos. HandsAI le da a tu agente el poder de
+          actuar.</span>
       </p>
 
       <div class="features-grid">
-        <div class="feature-card highlighted" style="background: rgba(200, 240, 74, 0.03); border-color: rgba(200, 240, 74, 0.2);">
+        <div class="feature-card highlighted"
+          style="background: rgba(200, 240, 74, 0.03); border-color: rgba(200, 240, 74, 0.2);">
           <div class="feature-icon">⚡</div>
-          <h3><span class="lang-en">Integrate APIs in minutes</span><span class="lang-es">Integrá APIs en minutos</span></h3>
-          <p><span class="lang-en">Convert any REST API into AI agent tools with zero manual development. If your API exists, your agent can use it immediately.</span><span class="lang-es">Convertí cualquier API REST en herramientas para agentes sin desarrollo manual. Si la API existe, el agente ya la puede usar.</span></p>
+          <h3><span class="lang-en">Integrate APIs in minutes</span><span class="lang-es">Integrá APIs en minutos</span>
+          </h3>
+          <p><span class="lang-en">Convert any REST API into AI agent tools with zero manual development. If your API
+              exists, your agent can use it immediately.</span><span class="lang-es">Convertí cualquier API REST en
+              herramientas para agentes sin desarrollo manual. Si la API existe, el agente ya la puede usar.</span></p>
         </div>
-        <div class="feature-card highlighted" style="background: rgba(200, 240, 74, 0.03); border-color: rgba(200, 240, 74, 0.2);">
+        <div class="feature-card highlighted"
+          style="background: rgba(200, 240, 74, 0.03); border-color: rgba(200, 240, 74, 0.2);">
           <div class="feature-icon">🔐</div>
-          <h3><span class="lang-en">Invisible, absolute security</span><span class="lang-es">Seguridad invisible y absoluta</span></h3>
-          <p><span class="lang-en">Your agent never sees your passwords. Credentials are encrypted and injected server-side by HandsAI exactly when needed.</span><span class="lang-es">Tu agente nunca ve tus contraseñas. Las credenciales se encriptan y se inyectan del lado del servidor justo cuando se necesitan.</span></p>
+          <h3><span class="lang-en">Invisible, absolute security</span><span class="lang-es">Seguridad invisible y
+              absoluta</span></h3>
+          <p><span class="lang-en">Your agent never sees your passwords. Credentials are encrypted and injected
+              server-side by HandsAI exactly when needed.</span><span class="lang-es">Tu agente nunca ve tus
+              contraseñas. Las credenciales se encriptan y se inyectan del lado del servidor justo cuando se
+              necesitan.</span></p>
         </div>
-        <div class="feature-card highlighted" style="background: rgba(200, 240, 74, 0.03); border-color: rgba(200, 240, 74, 0.2);">
+        <div class="feature-card highlighted"
+          style="background: rgba(200, 240, 74, 0.03); border-color: rgba(200, 240, 74, 0.2);">
           <div class="feature-icon">🚀</div>
-          <h3><span class="lang-en">Real, uninterrupted execution</span><span class="lang-es">Ejecución real sin cortes</span></h3>
-          <p><span class="lang-en">Automatic token renewals, smart 401 retries, and live tool updates without ever needing to restart your active agents.</span><span class="lang-es">Renovación automática de accesos, reintentos inteligentes y actualización de herramientas en vivo sin reiniciar tus agentes.</span></p>
+          <h3><span class="lang-en">Real, uninterrupted execution</span><span class="lang-es">Ejecución real sin
+              cortes</span></h3>
+          <p><span class="lang-en">Automatic token renewals, smart 401 retries, and live tool updates without ever
+              needing to restart your active agents.</span><span class="lang-es">Renovación automática de accesos,
+              reintentos inteligentes y actualización de herramientas en vivo sin reiniciar tus agentes.</span></p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🛡️</div>
-          <h3><span class="lang-en">Protection against attacks</span><span class="lang-es">Protección contra ataques</span></h3>
-          <p><span class="lang-en">Prevents external APIs from manipulating your agent via prompts and automatically conceals sensitive data before it leaks back.</span><span class="lang-es">Evita que APIs externas manipulen al agente mediante inyecciones y redacta automáticamente datos sensibles antes de que salgan.</span></p>
+          <h3><span class="lang-en">Protection against attacks</span><span class="lang-es">Protección contra
+              ataques</span></h3>
+          <p><span class="lang-en">Prevents external APIs from manipulating your agent via prompts and automatically
+              conceals sensitive data before it leaks back.</span><span class="lang-es">Evita que APIs externas
+              manipulen al agente mediante inyecciones y redacta automáticamente datos sensibles antes de que
+              salgan.</span></p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🏢</div>
           <h3><span class="lang-en">Enterprise ready</span><span class="lang-es">Listo para empresas</span></h3>
-          <p><span class="lang-en">Tenant isolation, full access control, and built on Java 21 Virtual Threads to easily scale from a local sidekick to enterprise workloads.</span><span class="lang-es">Aislamiento por cliente, control total de accesos y construido sobre Java 21 para escalar desde tu computadora a nivel corporativo.</span></p>
+          <p><span class="lang-en">Tenant isolation, full access control, and built on Java 21 Virtual Threads to easily
+              scale from a local sidekick to enterprise workloads.</span><span class="lang-es">Aislamiento por cliente,
+              control total de accesos y construido sobre Java 21 para escalar desde tu computadora a nivel
+              corporativo.</span></p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🧠</div>
-          <h3><span class="lang-en">Persistent agent memory</span><span class="lang-es">Memoria persistente de agente</span></h3>
-          <p><span class="lang-en">Built-in short and long-term memory allows your agents to seamlessly remember past interactions across distinct sessions.</span><span class="lang-es">Memoria incorporada a corto y largo plazo para que tus agentes recuerden sin problemas interacciones pasadas entre diferentes sesiones.</span></p>
+          <h3><span class="lang-en">Persistent agent memory</span><span class="lang-es">Memoria persistente de
+              agente</span></h3>
+          <p><span class="lang-en">Built-in short and long-term memory allows your agents to seamlessly remember past
+              interactions across distinct sessions.</span><span class="lang-es">Memoria incorporada a corto y largo
+              plazo para que tus agentes recuerden sin problemas interacciones pasadas entre diferentes sesiones.</span>
+          </p>
         </div>
       </div>
     </div>
@@ -1207,29 +1165,74 @@
     </div>
   </section>
 
-  <!-- STACK -->
-  <section class="stack" id="stack">
-    <p class="section-label"><span class="lang-en">Tech Stack</span><span class="lang-es">Stack Tecnológico</span></p>
-    <h2 class="section-title"><span class="lang-en">Built for production.<br>Ready for agents.</span><span
-        class="lang-es">Construido para producción.<br>Listo para agentes.</span></h2>
+  <!-- HOW IT WORKS -->
+  <section class="flow" id="how">
+    <p class="section-label"><span class="lang-en">Architecture</span><span class="lang-es">Arquitectura</span></p>
+    <h2 class="section-title"><span class="lang-en">One bridge.<br>Every API.</span><span class="lang-es">Un
+        puente.<br>Todas las APIs.</span></h2>
     <p class="section-desc">
-      <span class="lang-en">Zero external dependencies for the database. Native compilation available. Designed to run
-        locally alongside your agent with minimal overhead.</span><span class="lang-es">Cero dependencias externas para
-        la base de datos. Compilación nativa disponible. Diseñado para ejecutarse localmente junto a tu agente con
-        sobrecarga mínima.</span>
+      <span class="lang-en">HandsAI sits between your LLM and the world. The human registers APIs. The agent uses them.
+        Nobody touches what they shouldn't.</span><span class="lang-es">HandsAI se sitúa entre tu LLM y el mundo. El
+        humano registra las APIs. El agente las usa. Nadie maneja credenciales que no deba tener.</span>
     </p>
 
-    <div class="tech-pills">
-      <div class="tech-pill"><span class="dot"></span>Java 21 + Virtual Threads</div>
-      <div class="tech-pill"><span class="dot"></span>Spring Boot 3.5</div>
-      <div class="tech-pill"><span class="dot"></span>Model Context Protocol (MCP)</div>
-      <div class="tech-pill"><span class="dot"></span>Go Bridge (stdio)</div>
-      <div class="tech-pill"><span class="dot"></span>PostgreSQL + JPA</div>
-      <div class="tech-pill"><span class="dot"></span>GraalVM Native</div>
-      <div class="tech-pill"><span class="dot"></span>Jasypt AES Encryption</div>
-      <div class="tech-pill"><span class="dot"></span>Angular Frontend</div>
-      <div class="tech-pill"><span class="dot"></span>Spring <span class="lang-en">Security</span><span
-          class="lang-es">Seguridad</span> + PAT</div>
+    <div class="flow-diagram">
+      <div class="flow-node llm">
+        <div class="icon">🤖</div>
+        <div class="label"><span class="lang-en">Client</span><span class="lang-es">Cliente</span></div>
+        <div class="name"><span class="lang-en">LLM / Agent</span><span class="lang-es">LLM / Agente</span></div>
+      </div>
+      <div class="flow-arrow">
+        <div class="line"></div>
+        <div class="protocol">MCP stdio</div>
+      </div>
+      <div class="flow-node bridge">
+        <div class="icon">⚡</div>
+        <div class="label"><span class="lang-en">Go Binary</span><span class="lang-es">Binario Go</span></div>
+        <div class="name"><span class="lang-en">HandsAI Bridge</span><span class="lang-es">Puente HandsAI</span></div>
+      </div>
+      <div class="flow-arrow">
+        <div class="line"></div>
+        <div class="protocol">HTTP + PAT</div>
+      </div>
+      <div class="flow-node handsai">
+        <div class="icon">🖐️</div>
+        <div class="label">Java 21</div>
+        <div class="name"><span class="lang-en">HandsAI Server</span><span class="lang-es">Servidor HandsAI</span></div>
+      </div>
+      <div class="flow-arrow">
+        <div class="line"></div>
+        <div class="protocol">REST + Auth</div>
+      </div>
+      <div class="flow-node api">
+        <div class="icon">🌐</div>
+        <div class="label"><span class="lang-en">External</span><span class="lang-es">Externo</span></div>
+        <div class="name"><span class="lang-en">Any API</span><span class="lang-es">Cualquier API</span></div>
+      </div>
+    </div>
+
+    <div class="insight">
+      <span class="bullet">→</span>
+      <p>
+        <span class="lang-en">The LLM sees <strong>tool names and parameters</strong>. It never sees the endpoint URL,
+          the authentication headers, or the API keys. HandsAI resolves all of that internally — the agent can only
+          operate within the boundaries the human explicitly defined.</span><span class="lang-es">El LLM solo ve
+          <strong>nombres de herramientas y parámetros</strong>. Nunca ve la URL del endpoint, las cabeceras de
+          autenticación o las claves API. HandsAI resuelve todo eso internamente — el agente solo puede operar dentro de
+          los límites que el humano definió explícitamente.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2><span class="lang-en">Your agent is only as powerful<br>as the <em>hands</em> you give it.</span><span
+        class="lang-es">Tu agente es tan poderoso<br>como las <em>manos</em> que le das.</span></h2>
+    <p><span class="lang-en">Register your first API in minutes. No plugins, no code, no surprises.</span><span
+        class="lang-es">Registra tu primera API en minutos. Sin plugins, sin código, sin sorpresas.</span></p>
+    <div class="cta-actions">
+      <a href="#contact" class="btn-primary"><span class="lang-en">Request access →</span><span
+          class="lang-es">Solicitar acceso →</span></a>
     </div>
   </section>
 
