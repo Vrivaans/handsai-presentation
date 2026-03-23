@@ -1054,9 +1054,11 @@
           <div class="feature-icon">🛡️</div>
           <h3><span class="lang-en">Prompt Injection Defense</span><span class="lang-es">Defensa contra Prompt
               Injection</span></h3>
-          <p>Incoming tool responses are wrapped in <code
-              style="font-size:0.8em;color:var(--accent2)">&lt;Untrusted<span class="lang-en">External</span><span class="lang-es">Externo</span>Content&gt;</code>
-            and scrubbed for known injection patterns before reaching the LLM context.</p>
+          <p><span class="lang-en">Incoming tool responses are wrapped in <code
+              style="font-size:0.8em;color:var(--accent2)">&lt;UntrustedExternalContent&gt;</code>
+            and scrubbed for known injection patterns before reaching the LLM context.</span><span class="lang-es">Las respuestas de las herramientas se envuelven en <code
+              style="font-size:0.8em;color:var(--accent2)">&lt;UntrustedExternalContent&gt;</code>
+            y se sanean buscando patrones conocidos de inyección antes de llegar al contexto del LLM.</span></p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🚫</div>
@@ -1093,7 +1095,7 @@
 
   <!-- SECURITY -->
   <section class="security" id="security">
-    <p class="section-label"><span class="lang-en">Security</span><span class="lang-es">Seguridad</span> Model</p>
+    <p class="section-label"><span class="lang-en">Security Model</span><span class="lang-es">Modelo de Seguridad</span></p>
     <h2 class="section-title"><span class="lang-en">The agent can only do<br>what you allow.</span><span
         class="lang-es">El agente solo puede hacer<br>lo que tú le permitas.</span></h2>
     <p class="section-desc">
@@ -1172,7 +1174,7 @@
           <span class="filename">tool_execution.log</span>
         </div>
         <div class="code-body">
-          <div><span class="comment">// LLM sends parameters to tool call</span></div>
+          <div><span class="comment"><span class="lang-en">// LLM sends parameters to tool call</span><span class="lang-es">// El LLM envía los parámetros a la herramienta</span></span></div>
           <div>{</div>
           <div>&nbsp;&nbsp;<span class="key">"tool"</span>: <span class="string">"send-email"</span>,</div>
           <div>&nbsp;&nbsp;<span class="key">"params"</span>: {</div>
@@ -1184,15 +1186,13 @@
           <div>&nbsp;&nbsp;}</div>
           <div>}</div>
           <br>
-          <div><span class="comment">// HandsAI dispatches with registered credentials</span></div>
-          <div><span class="comment">// URL, auth headers — never visible to LLM</span></div>
+          <div><span class="comment"><span class="lang-en">// HandsAI dispatches with registered credentials</span><span class="lang-es">// HandsAI despacha la petición con credenciales registradas</span></span></div>
+          <div><span class="comment"><span class="lang-en">// URL, auth headers — never visible to LLM</span><span class="lang-es">// URL, cabeceras de auth — nunca visibles al LLM</span></span></div>
           <br>
-          <div><span class="comment">// Response wrapped before returning</span></div>
-          <div><span class="key">&lt;Untrusted<span class="lang-en">External</span><span
-                class="lang-es">Externo</span>Content&gt;</span></div>
+          <div><span class="comment"><span class="lang-en">// Response wrapped before returning</span><span class="lang-es">// La respuesta se envuelve antes de devolverse al LLM</span></span></div>
+          <div><span class="key">&lt;UntrustedExternalContent&gt;</span></div>
           <div>&nbsp;&nbsp;<span class="value">{ "status": "sent", "id": "msg_123" }</span></div>
-          <div><span class="key">&lt;/Untrusted<span class="lang-en">External</span><span
-                class="lang-es">Externo</span>Content&gt;</span></div>
+          <div><span class="key">&lt;/UntrustedExternalContent&gt;</span></div>
         </div>
       </div>
     </div>
