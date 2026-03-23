@@ -933,6 +933,50 @@
     </div>
   </section>
 
+  <!-- PHILOSOPHY -->
+  <section class="philosophy" id="philosophy">
+    <div class="philosophy-inner">
+      <p class="section-label" style="text-align:center"><span class="lang-en">Why it matters</span><span
+          class="lang-es">Por qué importa</span></p>
+      <h2><span class="lang-en">The AI doesn't just analyze.<br><em>It acts.</em></span><span class="lang-es">La IA no solo analiza.<br><em>Actúa.</em></span></h2>
+      <p style="color:var(--muted);font-size:1.05rem;line-height:1.7;max-width:560px;margin:0 auto 1rem">
+        <span class="lang-en">Ask your agent to create a lead in the CRM, move a card in Trello, or post on LinkedIn. It does it. Right now. Without you touching anything.</span><span
+          class="lang-es">Pedile a tu agente que cree un lead en el CRM, mueva una tarjeta en Trello, o publique en LinkedIn. Lo hace. Ahora mismo. Sin que vos toques nada.</span>
+      </p>
+
+      <div class="pillars">
+        <div class="pillar">
+          <div class="num">01</div>
+          <h4><span class="lang-en">The problem it solves</span><span class="lang-es">El problema que resuelve</span></h4>
+          <p><span class="lang-en">Connecting AI agents to real systems is complex, fragile, and dangerous. It requires manual integrations, exposes credentials to the model, and breaks with every API change.</span><span
+              class="lang-es">Conectar agentes de IA con sistemas reales es complejo, frágil y peligroso. Requiere integraciones manuales, expone credenciales al modelo, y se rompe con cada cambio de API.</span></p>
+        </div>
+        <div class="pillar">
+          <div class="num">02</div>
+          <h4><span class="lang-en">How it works in one line</span><span class="lang-es">Cómo funciona en una línea</span></h4>
+          <p><span class="lang-en">Register any REST API → HandsAI converts it into a tool → your agent uses it with natural language. No code. No plugins. No surprises.</span><span
+              class="lang-es">Registrás cualquier API REST → HandsAI la convierte en herramienta → tu agente la usa con lenguaje natural. Sin código. Sin plugins. Sin sorpresas.</span></p>
+        </div>
+        <div class="pillar">
+          <div class="num">03</div>
+          <h4><span class="lang-en">Security you don't have to think about</span><span class="lang-es">Seguridad que no tenés que pensar</span></h4>
+          <p><span class="lang-en">The agent never sees your credentials. HandsAI injects them transparently before each call. If something malicious tries to sneak in from external API responses, HandsAI neutralizes it before it reaches the model.</span><span class="lang-es">El agente nunca ve tus credenciales. HandsAI las inyecta de forma transparente antes de cada llamada. Si algo malicioso intenta colarse desde las respuestas de APIs externas, HandsAI lo neutraliza antes de que llegue al modelo.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2><span class="lang-en">Your agent is only as powerful<br>as the <em>hands</em> you give it.</span><span
+        class="lang-es">Tu agente es tan poderoso<br>como las <em>manos</em> que le das.</span></h2>
+    <p><span class="lang-en">Register your first API in minutes. No plugins, no code, no surprises.</span><span
+        class="lang-es">Registra tu primera API en minutos. Sin plugins, sin código, sin sorpresas.</span></p>
+    <div class="cta-actions">
+      <a href="#contact" class="btn-primary"><span class="lang-en">Request access →</span><span class="lang-es">Solicitar acceso →</span></a>
+    </div>
+  </section>
+
   <!-- HOW IT WORKS -->
   <section class="flow" id="how">
     <p class="section-label"><span class="lang-en">Architecture</span><span class="lang-es">Arquitectura</span></p>
@@ -1123,9 +1167,9 @@
           <div class="text">
             <h4><span class="lang-en">Opaque credential management</span><span class="lang-es">Gestión opaca de
                 credenciales</span></h4>
-            <p><span class="lang-en">Credentials are AES-encrypted in SQLite and decrypted only at dispatch time,
+            <p><span class="lang-en">Credentials are AES-encrypted in PostgreSQL and decrypted only at dispatch time,
                 in-flight. They never appear in tool responses or LLM context.</span><span class="lang-es">Las
-                credenciales se cifran (AES) en SQLite y solo se descifran en vuelo al despachar. Nunca aparecen en las
+                credenciales se cifran (AES) en PostgreSQL y solo se descifran en vuelo al despachar. Nunca aparecen en las
                 respuestas ni en el contexto del LLM.</span></p>
           </div>
         </li>
@@ -1198,39 +1242,6 @@
     </div>
   </section>
 
-  <!-- PHILOSOPHY -->
-  <section class="philosophy" id="philosophy">
-    <div class="philosophy-inner">
-      <p class="section-label" style="text-align:center"><span class="lang-en">Why it matters</span><span
-          class="lang-es">Por qué importa</span></p>
-      <h2><span class="lang-en">The AI doesn't just analyze.<br><em>It acts.</em></span><span class="lang-es">La IA no solo analiza.<br><em>Actúa.</em></span></h2>
-      <p style="color:var(--muted);font-size:1.05rem;line-height:1.7;max-width:560px;margin:0 auto 1rem">
-        <span class="lang-en">Ask your agent to create a lead in the CRM, move a card in Trello, or post on LinkedIn. It does it. Right now. Without you touching anything.</span><span
-          class="lang-es">Pedile a tu agente que cree un lead en el CRM, mueva una tarjeta en Trello, o publique en LinkedIn. Lo hace. Ahora mismo. Sin que vos toques nada.</span>
-      </p>
-
-      <div class="pillars">
-        <div class="pillar">
-          <div class="num">01</div>
-          <h4><span class="lang-en">The problem it solves</span><span class="lang-es">El problema que resuelve</span></h4>
-          <p><span class="lang-en">Connecting AI agents to real systems is complex, fragile, and dangerous. It requires manual integrations, exposes credentials to the model, and breaks with every API change.</span><span
-              class="lang-es">Conectar agentes de IA con sistemas reales es complejo, frágil y peligroso. Requiere integraciones manuales, expone credenciales al modelo, y se rompe con cada cambio de API.</span></p>
-        </div>
-        <div class="pillar">
-          <div class="num">02</div>
-          <h4><span class="lang-en">How it works in one line</span><span class="lang-es">Cómo funciona en una línea</span></h4>
-          <p><span class="lang-en">Register any REST API → HandsAI converts it into a tool → your agent uses it with natural language. No code. No plugins. No surprises.</span><span
-              class="lang-es">Registrás cualquier API REST → HandsAI la convierte en herramienta → tu agente la usa con lenguaje natural. Sin código. Sin plugins. Sin sorpresas.</span></p>
-        </div>
-        <div class="pillar">
-          <div class="num">03</div>
-          <h4><span class="lang-en">Security you don't have to think about</span><span class="lang-es">Seguridad que no tenés que pensar</span></h4>
-          <p><span class="lang-en">The agent never sees your credentials. HandsAI injects them transparently before each call. If something malicious tries to sneak in from external API responses, HandsAI neutralizes it before it reaches the model.</span><span class="lang-es">El agente nunca ve tus credenciales. HandsAI las inyecta de forma transparente antes de cada llamada. Si algo malicioso intenta colarse desde las respuestas de APIs externas, HandsAI lo neutraliza antes de que llegue al modelo.</span></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- STACK -->
   <section class="stack" id="stack">
     <p class="section-label"><span class="lang-en">Tech Stack</span><span class="lang-es">Stack Tecnológico</span></p>
@@ -1254,17 +1265,6 @@
       <div class="tech-pill"><span class="dot"></span>Angular Frontend</div>
       <div class="tech-pill"><span class="dot"></span>Spring <span class="lang-en">Security</span><span
           class="lang-es">Seguridad</span> + PAT</div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta">
-    <h2><span class="lang-en">Your agent is only as powerful<br>as the <em>hands</em> you give it.</span><span
-        class="lang-es">Tu agente es tan poderoso<br>como las <em>manos</em> que le das.</span></h2>
-    <p><span class="lang-en">Register your first API in minutes. No plugins, no code, no surprises.</span><span
-        class="lang-es">Registra tu primera API en minutos. Sin plugins, sin código, sin sorpresas.</span></p>
-    <div class="cta-actions">
-      <a href="#contact" class="btn-primary"><span class="lang-en">Request access →</span><span class="lang-es">Solicitar acceso →</span></a>
     </div>
   </section>
 
